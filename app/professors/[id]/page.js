@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { ChevronLeft } from "lucide-react";
-import Avatar from "@/components/Avatar";
+import ProfessorAvatar from "@/components/ProfessorAvatar";
 import StarRating from "@/components/StarRating";
 import CourseCard from "@/components/CourseCard";
 import { Skeleton } from "@/components/Skeleton";
@@ -86,7 +86,7 @@ export default function ProfessorDetailPage() {
       </Link>
 
       <div className="mt-4 flex flex-col items-start gap-4 rounded-xl border border-slate-200 bg-white p-5 sm:flex-row sm:items-center">
-        <Avatar name={professor.name} color={professor.color} size={64} />
+        <ProfessorAvatar professor={professor} size={64} />
         <div>
           <h1 className="text-xl font-bold text-slate-900">{professor.name}</h1>
           <p className="mt-1 text-sm text-slate-600">{professor.bio}</p>

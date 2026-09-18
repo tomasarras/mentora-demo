@@ -1,0 +1,64 @@
+Prompts para generar los retratos de los 10 profesores ficticios de Mentora
+con una IA de imágenes (ej. Gemini "nano banana"). Son personas inventadas,
+no basadas en nadie real. 2 variantes por profesor para elegir la que
+más te guste. Nombre de archivo final sugerido entre corchetes.
+
+title=Elena Vidal [prof_elena.jpg]
+description=Professional headshot photo of a fictional woman in her late 30s, English teacher, warm friendly smile, wavy brown hair, wearing a light blazer, neutral soft grey studio background, natural even lighting, photorealistic, shoulders-up portrait, looking at camera
+
+title=Elena Vidal (alt) [prof_elena.jpg]
+description=Photorealistic portrait of an invented Latina woman around 35 years old, confident warm expression, shoulder-length brown hair, casual smart blouse, soft neutral background, professional headshot lighting, looking directly at camera, friendly teacher vibe
+
+title=Julieta Fernández [prof_julieta.jpg]
+description=Professional headshot photo of a fictional woman in her early 30s, Spanish language teacher, bright genuine smile, dark curly hair, small hoop earrings, wearing a mustard-colored top, soft neutral studio background, natural lighting, photorealistic portrait, shoulders-up
+
+title=Julieta Fernández (alt) [prof_julieta.jpg]
+description=Photorealistic headshot of an invented young Latina woman, mid-20s to early 30s, expressive warm smile, straight dark hair, casual professional cardigan, plain light background, even studio lighting, looking at camera, approachable teacher look
+
+title=Marcos Ibáñez [prof_marcos.jpg]
+description=Professional headshot photo of a fictional man in his early 30s, software developer, short dark hair, light stubble, thin-framed glasses, wearing a plain dark t-shirt, neutral grey studio background, natural lighting, photorealistic portrait, shoulders-up, relaxed confident expression
+
+title=Marcos Ibáñez (alt) [prof_marcos.jpg]
+description=Photorealistic portrait of an invented man around 30 years old, developer, friendly smile, short tousled hair, casual button-up shirt, soft neutral background, even studio lighting, looking at camera, modern tech professional vibe
+
+title=Simón Castro [prof_simon.jpg]
+description=Professional headshot photo of a fictional man in his late 20s, data engineer, buzzed short hair, calm confident expression, wearing a simple grey crew-neck sweater, neutral soft background, natural lighting, photorealistic portrait, shoulders-up
+
+title=Simón Castro (alt) [prof_simon.jpg]
+description=Photorealistic headshot of an invented young man, late 20s, analytical friendly look, short dark hair, round glasses, plain collared shirt, soft studio background, even lighting, looking directly at camera
+
+title=Renata Suárez [prof_renata.jpg]
+description=Professional headshot photo of a fictional woman in her early 30s, UX/UI designer, short stylish bob haircut, creative confident smile, minimalist earrings, wearing a black turtleneck, neutral light studio background, natural lighting, photorealistic portrait, shoulders-up
+
+title=Renata Suárez (alt) [prof_renata.jpg]
+description=Photorealistic portrait of an invented woman around 32, designer, bold short haircut, warm smile, modern minimal outfit, soft neutral background, professional even lighting, looking at camera, creative professional vibe
+
+title=Tomás Herrera [prof_tomas.jpg]
+description=Professional headshot photo of a fictional man in his 40s, business consultant, short greying hair, well-groomed beard, confident approachable smile, wearing a navy blazer over a white shirt, neutral studio background, natural lighting, photorealistic portrait, shoulders-up
+
+title=Tomás Herrera (alt) [prof_tomas.jpg]
+description=Photorealistic headshot of an invented man around 42 years old, business professional, short dark hair with light grey at temples, warm confident expression, blazer and open-collar shirt, soft neutral background, even studio lighting, looking at camera
+
+title=Valentina Campos [prof_valentina.jpg]
+description=Professional headshot photo of a fictional woman in her early 30s, digital marketing specialist, long straight blonde hair, bright energetic smile, wearing a coral-colored blouse, neutral soft studio background, natural lighting, photorealistic portrait, shoulders-up
+
+title=Valentina Campos (alt) [prof_valentina.jpg]
+description=Photorealistic portrait of an invented woman around 30, marketing professional, long light brown hair, confident friendly smile, modern casual blazer, plain light background, even studio lighting, looking directly at camera
+
+title=Bruno Reyes [prof_bruno.jpg]
+description=Professional headshot photo of a fictional man in his mid-30s, photographer, short dark hair, light beard, relaxed genuine smile, wearing a denim jacket over a plain t-shirt, neutral soft studio background, natural lighting, photorealistic portrait, shoulders-up
+
+title=Bruno Reyes (alt) [prof_bruno.jpg]
+description=Photorealistic headshot of an invented man around 35, creative photographer look, tousled dark hair, warm smile, casual jacket, soft neutral background, even natural lighting, looking at camera
+
+title=Agustina Molina [prof_agustina.jpg]
+description=Professional headshot photo of a fictional woman in her late 20s, pianist and music teacher, long dark hair, gentle warm smile, delicate necklace, wearing a soft burgundy top, neutral studio background, natural lighting, photorealistic portrait, shoulders-up
+
+title=Agustina Molina (alt) [prof_agustina.jpg]
+description=Photorealistic portrait of an invented young woman around 28, musician, long wavy dark hair, calm graceful expression, elegant simple top, soft neutral background, even studio lighting, looking directly at camera
+
+title=Iván Navarro [prof_ivan.jpg]
+description=Professional headshot photo of a fictional man in his late 30s, yoga and meditation instructor, calm serene expression, short dark hair, light beard, wearing a plain heather-grey shirt, neutral soft studio background, natural lighting, photorealistic portrait, shoulders-up
+
+title=Iván Navarro (alt) [prof_ivan.jpg]
+description=Photorealistic headshot of an invented man around 38, wellness instructor, relaxed peaceful smile, short hair, simple casual top, soft neutral background, even natural lighting, looking at camera

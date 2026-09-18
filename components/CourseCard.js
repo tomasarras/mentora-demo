@@ -3,6 +3,7 @@ import { Clock } from "lucide-react";
 import CourseThumb from "@/components/CourseThumb";
 import StarRating from "@/components/StarRating";
 import SeatsBadge from "@/components/SeatsBadge";
+import ProfessorAvatar from "@/components/ProfessorAvatar";
 import { useLanguage } from "@/components/LanguageProvider";
 import { formatPrice } from "@/lib/format";
 
@@ -21,7 +22,12 @@ export default function CourseCard({ course, professor, rating, seats }) {
         <h3 className="text-sm font-semibold text-slate-900 group-hover:text-amber-700">
           {course.title}
         </h3>
-        <p className="text-xs text-slate-500">{professor?.name}</p>
+        {professor && (
+          <div className="flex items-center gap-1.5">
+            <ProfessorAvatar professor={professor} size={18} />
+            <p className="text-xs text-slate-500">{professor.name}</p>
+          </div>
+        )}
 
         <StarRating avg={rating.avg} count={rating.count} />
 

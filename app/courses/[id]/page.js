@@ -7,7 +7,7 @@ import { CalendarClock, CheckCircle2, ChevronLeft, Clock, Layers } from "lucide-
 import CourseThumb from "@/components/CourseThumb";
 import StarRating from "@/components/StarRating";
 import SeatsBadge from "@/components/SeatsBadge";
-import Avatar from "@/components/Avatar";
+import ProfessorAvatar from "@/components/ProfessorAvatar";
 import ReviewCard from "@/components/ReviewCard";
 import ReviewForm from "@/components/ReviewForm";
 import { Skeleton } from "@/components/Skeleton";
@@ -124,7 +124,7 @@ export default function CourseDetailPage() {
             href={`/professors/${professor.id}`}
             className="mt-4 flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 transition hover:border-amber-300"
           >
-            <Avatar name={professor.name} color={professor.color} />
+            <ProfessorAvatar professor={professor} />
             <div>
               <p className="text-xs text-slate-400">{t("taught_by")}</p>
               <p className="text-sm font-semibold text-slate-800">{professor.name}</p>
