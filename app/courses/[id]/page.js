@@ -3,8 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { CalendarClock, CheckCircle2, ChevronLeft, Clock, Layers } from "lucide-react";
-import CourseThumb from "@/components/CourseThumb";
+import { CalendarClock, CheckCircle2, ChevronLeft, ChevronRight, Clock, Layers } from "lucide-react";
 import StarRating from "@/components/StarRating";
 import SeatsBadge from "@/components/SeatsBadge";
 import ProfessorAvatar from "@/components/ProfessorAvatar";
@@ -13,7 +12,7 @@ import ReviewForm from "@/components/ReviewForm";
 import { Skeleton } from "@/components/Skeleton";
 import { useLanguage } from "@/components/LanguageProvider";
 import { randomDelay } from "@/lib/delay";
-import { PROFESSORS, courseRating, generateCatalog, makeId, seatsInfo } from "@/lib/data";
+import { PROFESSORS, areaColor, courseRating, generateCatalog, makeId, seatsInfo } from "@/lib/data";
 import { loadState, saveState } from "@/lib/storage";
 import { formatPrice } from "@/lib/format";
 
@@ -109,7 +108,21 @@ export default function CourseDetailPage() {
         {t("back_to_catalog")}
       </Link>
 
-      <CourseThumb area={course.area} className="mt-4 h-48 w-full rounded-2xl" />
+      <Link
+        href={`/professors/${professor.id}`}
+        className="mt-4 flex items-center gap-5 rounded-2xl p-6 transition hover:brightness-105"
+        style={{ background: `linear-gradient(135deg, ${areaColor(course.area)}, ${areaColor(course.area)}99)` }}
+      >
+        <ProfessorAvatar professor={professor} size={88} className="shrink-0 ring-4 ring-white/60 shadow" />
+        <div className="min-w-0">
+          <p className="text-xs font-medium text-white/80">{t("taught_by")}</p>
+          <p className="truncate text-xl font-bold text-white">{professor.name}</p>
+          <p className="mt-1 flex items-center gap-0.5 text-xs font-medium text-white/85">
+            {t("view_professor_profile")}
+            <ChevronRight size={13} />
+          </p>
+        </div>
+      </Link>
 
       <div className="mt-5 flex flex-col gap-6 sm:flex-row">
         <div className="flex-1">
@@ -119,17 +132,6 @@ export default function CourseDetailPage() {
           <div className="mt-2">
             <StarRating avg={rating.avg} count={rating.count} />
           </div>
-
-          <Link
-            href={`/professors/${professor.id}`}
-            className="mt-4 flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 transition hover:border-amber-300"
-          >
-            <ProfessorAvatar professor={professor} />
-            <div>
-              <p className="text-xs text-slate-400">{t("taught_by")}</p>
-              <p className="text-sm font-semibold text-slate-800">{professor.name}</p>
-            </div>
-          </Link>
 
           <div className="mt-6">
             <h2 className="text-sm font-semibold text-slate-900">{t("about_course")}</h2>

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Avatar from "@/components/Avatar";
 
-export default function ProfessorAvatar({ professor, size = 36 }) {
+export default function ProfessorAvatar({ professor, size = 36, className = "" }) {
   const [loaded, setLoaded] = useState(false);
   const src = `/images/professors/${professor.id}.jpg`;
 
@@ -23,7 +23,7 @@ export default function ProfessorAvatar({ professor, size = 36 }) {
   }, [src]);
 
   if (!loaded) {
-    return <Avatar name={professor.name} color={professor.color} size={size} />;
+    return <Avatar name={professor.name} color={professor.color} size={size} className={className} />;
   }
 
   return (
@@ -31,7 +31,7 @@ export default function ProfessorAvatar({ professor, size = 36 }) {
     <img
       src={src}
       alt={professor.name}
-      className="shrink-0 rounded-full object-cover"
+      className={`shrink-0 rounded-full object-cover ${className}`}
       style={{ width: size, height: size }}
     />
   );

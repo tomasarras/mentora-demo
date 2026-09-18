@@ -7,10 +7,10 @@ function initials(name) {
     .toUpperCase();
 }
 
-export default function Avatar({ name, color, size = 36 }) {
+export default function Avatar({ name, color, size = 36, className = "" }) {
   return (
     <span
-      className="flex shrink-0 items-center justify-center rounded-full font-semibold text-white"
+      className={`flex shrink-0 items-center justify-center rounded-full font-semibold text-white ${className}`}
       style={{ width: size, height: size, background: color, fontSize: size * 0.4 }}
     >
       {initials(name)}
